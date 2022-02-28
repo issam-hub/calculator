@@ -22,7 +22,7 @@ This is a solution to the [Calculator app challenge on Frontend Mentor](https://
 
 ### Links
 
--   Solution URL: [Add solution URL here](https://your-solution-url.com)
+-   Solution URL: [solution in frontend mentor website](https://www.frontendmentor.io/solutions/calculator-using-only-vanilla-js-YHwSeyTxz)
 -   Live Site URL: [live demo](https://issam-hub.github.io/calculator/)
 
 ### Built with
