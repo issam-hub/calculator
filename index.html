@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <title>Frontend Mentor | Calculator app</title>
+        <style>
+            .attribution {
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                font-size: 11px;
+                color: white;
+                padding-block: 15px;
+            }
+            .attribution a {
+                color: hsl(228, 45%, 44%);
+            }
+        </style>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div class="calc">
+            <div class="head">
+                <h2>calc</h2>
+                <div class="theme-toggle">
+                    <span></span>
+                    <div class="themes">
+                        <span class="1">1</span>
+                        <span class="2">2</span>
+                        <span class="3">3</span>
+                    </div>
+                </div>
+            </div>
+            <div class="screen">
+                <p></p>
+                <span></span>
+            </div>
+            <div class="buttons">
+                <span data-key="7" class="num">7</span>
+                <span data-key="8" class="num">8</span>
+                <span data-key="9" class="num">9</span>
+                <span class="rm">del</span>
+                <span data-key="4" class="num">4</span>
+                <span data-key="5" class="num">5</span>
+                <span data-key="6" class="num">6</span>
+                <span data-key="+">+</span>
+                <span data-key="3" class="num">3</span>
+                <span data-key="2" class="num">2</span>
+                <span data-key="1" class="num">1</span>
+                <span data-key="-">-</span>
+                <span data-key="." class="num">.</span>
+                <span data-key="0" class="num">0</span>
+                <span data-key="/">/</span>
+                <span data-key="*">x</span>
+                <span class="reset">reset</span>
+                <span class="equals">=</span>
+            </div>
+        </div>
+        <div class="attribution">
+            Challenge by
+            <a
+                href="https://www.frontendmentor.io?ref=challenge"
+                target="_blank"
+                >Frontend Mentor</a
+            >. Coded by
+            <a href="https://www.instagram.com/issam_4real/">issam</a>.
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
