@@ -28,7 +28,7 @@ Users should be able to:
 ![desktop-screenshot](images/Screenshot-desktop.png)
 ![mobile-screenshot](images/Screenshot-mobile.png)
 ![theme2-screenshot](images/Screenshot-theme2.png)
-![theme3-screenshot](images/Screenshot-theme3.jpg)
+![theme3-screenshot](images/Screenshot-theme3.png)
 
 ### Links
 
