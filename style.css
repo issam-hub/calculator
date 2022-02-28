@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+}
+*,
+::after,
+::before {
+    padding: 0;
+    margin: 0;
+}
+
+body,
+button {
+    font-family: "Spartan", sans-serif;
+    background-color: var(--theme-main-bg);
+}
+
+:root {
+    --theme-main-bg: hsl(222, 26%, 31%);
+    --theme-key-bg: hsl(30, 25%, 89%);
+    --theme-key-clr: hsl(221, 14%, 31%);
+    --theme-key-sdw: hsl(28deg 16% 65%);
+    --toggle-theme-bg: hsl(223, 31%, 20%);
+    --toggle-btn-bg: hsl(6, 63%, 50%);
+    --screen-theme-bg: hsl(224, 36%, 15%);
+    --screen-num-clr: white;
+    --main-btn-bg: hsl(225, 21%, 49%);
+    --main-btn-sdw: hsl(224deg 28% 35%);
+    --equal-btn-sdw: hsl(6, 70%, 34%);
+    --scroll-bg: hsl(223 38% 22% / 50%);
+    --scroll-bg-hover: hsl(223 38% 22% / 100%);
+}
+
+.calc {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 570px;
+    width: 417px;
+    padding-block: 10px;
+    background-color: var(--theme-main-bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+@media (max-width: 600px) {
+    .calc {
+        width: 360px;
+    }
+}
+.calc .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.head h2 {
+    color: var(--screen-num-clr);
+}
+.calc .theme-toggle {
+    display: flex;
+    align-items: center;
+    height: 20px;
+    width: 60px;
+    background-color: var(--toggle-theme-bg);
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+}
+.theme-toggle > span {
+    display: block;
+    margin-inline: 4px;
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    background-color: var(--toggle-btn-bg);
+    position: absolute;
+    left: 0;
+    transform: translateX(0);
+    transition: 0.3s;
+}
+.theme-toggle::before {
+    content: "theme";
+    color: var(--screen-num-clr);
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    position: absolute;
+    top: 55%;
+    left: 0;
+    transform: translate(-140%, -50%);
+}
+.theme-toggle .themes {
+    position: absolute;
+    top: -20px;
+    left: 0;
+}
+.themes span {
+    padding-left: 8.5px;
+    font-size: 0.6rem;
+    color: var(--screen-num-clr);
+}
+.calc .screen {
+    height: 20%;
+    width: 100%;
+    background-color: var(--screen-theme-bg);
+    border-radius: 10px;
+    padding: 15px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow-x: scroll;
+}
+.calc .screen::-webkit-scrollbar {
+    height: 8px;
+}
+.calc .screen::-webkit-scrollbar-thumb {
+    background-color: var(--scroll-bg);
+    border-radius: 10px;
+}
+.calc .screen::-webkit-scrollbar-thumb:hover {
+    background-color: var(--scroll-bg-hover);
+}
+.screen p {
+    color: var(--screen-num-clr);
+    font-size: 1.2rem;
+}
+.screen span {
+    color: var(--screen-num-clr);
+    font-size: 1.7rem;
+    align-self: flex-end;
+    padding-right: 30px;
+}
+.calc .buttons {
+    height: 67%;
+    width: 100%;
+    border-radius: 10px;
+    background-color: var(--toggle-theme-bg);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 83px);
+    grid-template-rows: repeat(5, 54px);
+    gap: 15px;
+}
+@media (max-width: 600px) {
+    .calc .buttons {
+        grid-template-columns: repeat(4, 69px);
+    }
+}
+.buttons span {
+    background-color: var(--theme-key-bg);
+    color: var(--theme-key-clr);
+    padding-block: 15px 10px;
+    font-size: 1.7rem;
+    box-shadow: 0 3.5px 0 0 var(--theme-key-sdw);
+    user-select: none;
+}
+.buttons span,
+.buttons .rm,
+.buttons .reset {
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+.buttons .reset,
+.buttons .rm {
+    text-align: center;
+    border: none;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    background-color: var(--main-btn-bg);
+    color: white;
+    font-weight: bold;
+    padding-block: 19.5px 13px;
+    margin-block: auto;
+    box-shadow: 0 3.5px 0 0 var(--main-btn-sdw);
+}
+.buttons .reset,
+.buttons .equals {
+    grid-column: span 2;
+}
+.buttons .equals {
+    background-color: var(--toggle-btn-bg);
+    color: white;
+    box-shadow: 0 3.5px 0 0 var(--equal-btn-sdw);
+}
