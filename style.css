@@ -48,6 +48,12 @@ button {
         width: 360px;
     }
 }
+@media (max-width: 400px) {
+    .calc {
+        width: 330px;
+        height: 540px;
+    }
+}
 .calc .head {
     display: flex;
     justify-content: space-between;
@@ -144,6 +150,18 @@ button {
 @media (max-width: 600px) {
     .calc .buttons {
         grid-template-columns: repeat(4, 69px);
+    }
+}
+@media (max-width: 400px) {
+    .calc .buttons {
+        grid-template-columns: repeat(4, 61.5px);
+        grid-template-rows: repeat(4, 50px);
+    }
+    .buttons .rm {
+        padding-block: 19px 10px;
+    }
+    .buttons .reset {
+        padding-block: 19.5px 13px;
     }
 }
 .buttons span {
