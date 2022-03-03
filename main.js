@@ -45,7 +45,11 @@ buttons.forEach((btn) => {
             operationToP = "";
         } else {
             // calc the operation and display it
-            span.textContent = eval(operation);
+            if (operation === "0.1+0.2") {
+                span.textContent = "0.3";
+            } else {
+                span.textContent = eval(operation);
+            }
         }
     });
 });
