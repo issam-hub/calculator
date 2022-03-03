@@ -44,5 +44,5 @@ I'll learn react in the next months make some awesome things that will take my s
 
 ## Author
 
--   Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
--   Instagram - [@yourusername]()
+-   Frontend Mentor - [@issam-hub](https://www.frontendmentor.io/profile/issam-hub)
+-   Instagram - [@issam_4real](https://www.instagram.com/issam_4real/)
